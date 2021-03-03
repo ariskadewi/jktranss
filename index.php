@@ -72,7 +72,7 @@
 <h3 align="center">Data Nota</h3>
 <div style="overflow-x:auto;">
 
-<table id="table" border="1">
+<table id="table" border="1" style="background-color: #C4C4C4;">
 	<div id="bg-a">
 	<tr>
 		<th>no</th>
@@ -123,7 +123,11 @@ while ($data = mysqli_fetch_array($query))
 }
 ?>
 
+
+
+
 </table>
+<a href="rekapharian.php">lihat rekapan harian</a>
 </div>
 </div>
 </body>
