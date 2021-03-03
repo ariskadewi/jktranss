@@ -5,10 +5,11 @@
 <head>
 	<title>tampilnota</title>
 	<link rel="stylesheet" type="text/css" href="style.css">
+
 </head>
 <body>
 
-<div id="bg">
+
 <form name="inputnota" method="post" action="prosesinputnota.php" id="masuk">
 	<h3 align="center">Input Nota</h3>
 	<table align="center">
@@ -72,8 +73,8 @@
 <h3 align="center">Data Nota</h3>
 <div style="overflow-x:auto;">
 
-<table id="table" border="1" style="background-color: #C4C4C4;">
-	<div id="bg-a">
+<table id="t01" align="center" class="bg" border="1px">
+	
 	<tr>
 		<th>no</th>
     	<th>sp</th>
@@ -87,7 +88,7 @@
         <th>tanggal</th>
         <th>action</th>
     </tr>
-    </div>
+ 
 <?php  
 include "koneksi.php";
 
@@ -129,6 +130,6 @@ while ($data = mysqli_fetch_array($query))
 </table>
 <a href="rekapharian.php">lihat rekapan harian</a>
 </div>
-</div>
+
 </body>
 </html>
